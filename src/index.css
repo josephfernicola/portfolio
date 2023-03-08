@@ -72,8 +72,8 @@ a {
 }
 
 .emailButton > svg {
-  height: 5rem;
-  width: 5rem;
+  height: 3rem;
+  width: 3rem;
   color: #00abe4;
 }
 .linkedinButton > svg {
@@ -148,7 +148,6 @@ a {
 }
 .buttonContainer {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   padding: 3rem;
 }
@@ -160,6 +159,15 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  flex: 1;
+}
+
+.emailButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
 }
 
 .headshotAndBio {
@@ -226,6 +234,10 @@ a {
 
 .aboutSpan {
   margin-right: 3rem;
+}
+
+.projectImage:hover {
+  opacity: 70%;
 }
 
 .loadingScreen {
@@ -373,5 +385,14 @@ a {
 @media (max-width: 400px) {
   .allProjects {
     padding-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .buttonContainer {
+    flex-direction: column;
+    height: 30rem;
+    padding: 0;
+    padding-top: 0.7rem;
   }
 }
