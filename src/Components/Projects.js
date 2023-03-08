@@ -3,13 +3,14 @@ import waldoPreview from "../images/waldoPreview.png";
 import shoppingCartPreview from "../images/shoppingCartPreview.png";
 import memoryCardPreview from "../images/memoryCardPreview.png";
 import twitterCloneCodePreview from "../images/twitterCloneCodePreview.png";
+import resumeBuilderPreview from "../images/resumeBuilderPreview.png";
 
 const Projects = () => {
   return (
     <main className="projectsContainer">
       <h1 className="projectsHeader">Take a look at my projects!</h1>
-      <div className="allProjects">
-        <div className="twitterCloneContainer">
+      <ul className="allProjects">
+        <li className="projectListItemContainer">
           <div className="titleAndImage">
             <div className="twitterTitle">Twitter Clone RESTful API</div>
             <img
@@ -21,8 +22,8 @@ const Projects = () => {
           <div className="projectDescription">
             <p>Description for Twitter Clone RESTful API</p>
           </div>
-        </div>
-        <div className="emrContainter">
+        </li>
+        <li className="projectListItemContainer">
           <div className="titleAndImage">
             <a
               href="https://noble-ehr.herokuapp.com/login"
@@ -46,8 +47,8 @@ const Projects = () => {
           <div className="projectDescription">
             <p>Description for Electronic Medical Record</p>
           </div>
-        </div>
-        <div className="waldoContainer">
+        </li>
+        <li className="projectListItemContainer">
           <div className="titleAndImage">
             <a
               href="https://josephfernicola.github.io/wheres-waldo"
@@ -71,8 +72,8 @@ const Projects = () => {
           <div className="projectDescription">
             <p>Description for Where's Waldo</p>
           </div>
-        </div>
-        <div className="shoppingCartContainer">
+        </li>
+        <li className="projectListItemContainer">
           <div className="titleAndImage">
             <a
               href="https://josephfernicola.github.io/shopping-cart/"
@@ -96,8 +97,8 @@ const Projects = () => {
           <div className="projectDescription">
             <p>Description for Shopping Cart</p>
           </div>
-        </div>
-        <div className="memoryCardContainer">
+        </li>
+        <li className="projectListItemContainer">
           <div className="titleAndImage">
             <a
               href="https://josephfernicola.github.io/memory-card/"
@@ -121,8 +122,33 @@ const Projects = () => {
           <div className="projectDescription">
             <p>Description for Memory Card Game</p>
           </div>
-        </div>
-      </div>
+        </li>
+        <li className="projectListItemContainer">
+          <div className="titleAndImage">
+            <a
+              href="https://josephfernicola.github.io/cv-application/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume Builder
+            </a>
+            <a
+              href="https://josephfernicola.github.io/cv-application/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={resumeBuilderPreview}
+                alt="Resume Builder Preview"
+                className="projectImage"
+              ></img>
+            </a>
+          </div>
+          <div className="projectDescription">
+            <p>Description for Resume Builder</p>
+          </div>
+        </li>
+      </ul>
     </main>
   );
 };

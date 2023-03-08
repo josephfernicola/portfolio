@@ -184,13 +184,10 @@ a {
   width: 25rem;
 }
 
-.emrContainter,
-.waldoContainer,
-.shoppingCartContainer,
-.memoryCardContainer,
-.twitterCloneContainer {
+.projectListItemContainer {
   display: flex;
   align-items: center;
+  list-style-type: none;
 }
 .titleAndImage {
   display: flex;
