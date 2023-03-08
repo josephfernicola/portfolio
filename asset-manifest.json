@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d77d6c1b.css",
-    "main.js": "/portfolio/static/js/main.9cce27e5.js",
-    "static/media/waldoPreview.png": "/portfolio/static/media/waldoPreview.6028a46e56a3f15a148b.png",
-    "static/media/memoryCardPreview.png": "/portfolio/static/media/memoryCardPreview.54d7d7474311b2e762c1.png",
-    "static/media/shoppingCartPreview.png": "/portfolio/static/media/shoppingCartPreview.ba56a490058f295577d7.png",
-    "static/media/emrPreview.png": "/portfolio/static/media/emrPreview.6c0269a45daa168c6877.png",
-    "static/media/twitterCloneCodePreview.png": "/portfolio/static/media/twitterCloneCodePreview.59f9eb6498ee0dc99ec7.png",
-    "static/media/resumeBuilderPreview.png": "/portfolio/static/media/resumeBuilderPreview.e8faf8956ef45021d0f6.png",
-    "static/media/nodeIcon.png": "/portfolio/static/media/nodeIcon.749b8af67e60d6b0dcab.png",
-    "static/media/javaIcon.png": "/portfolio/static/media/javaIcon.e238a2c40e6eaec570bc.png",
-    "static/media/postgresIcon.png": "/portfolio/static/media/postgresIcon.cfd9dc3f35b0c23f69dc.png",
-    "index.html": "/portfolio/index.html",
-    "main.d77d6c1b.css.map": "/portfolio/static/css/main.d77d6c1b.css.map",
-    "main.9cce27e5.js.map": "/portfolio/static/js/main.9cce27e5.js.map"
+    "main.css": "/portfolio/home/static/css/main.d77d6c1b.css",
+    "main.js": "/portfolio/home/static/js/main.fb4df4ad.js",
+    "static/media/waldoPreview.png": "/portfolio/home/static/media/waldoPreview.6028a46e56a3f15a148b.png",
+    "static/media/memoryCardPreview.png": "/portfolio/home/static/media/memoryCardPreview.54d7d7474311b2e762c1.png",
+    "static/media/shoppingCartPreview.png": "/portfolio/home/static/media/shoppingCartPreview.ba56a490058f295577d7.png",
+    "static/media/emrPreview.png": "/portfolio/home/static/media/emrPreview.6c0269a45daa168c6877.png",
+    "static/media/twitterCloneCodePreview.png": "/portfolio/home/static/media/twitterCloneCodePreview.59f9eb6498ee0dc99ec7.png",
+    "static/media/resumeBuilderPreview.png": "/portfolio/home/static/media/resumeBuilderPreview.e8faf8956ef45021d0f6.png",
+    "static/media/nodeIcon.png": "/portfolio/home/static/media/nodeIcon.749b8af67e60d6b0dcab.png",
+    "static/media/javaIcon.png": "/portfolio/home/static/media/javaIcon.e238a2c40e6eaec570bc.png",
+    "static/media/postgresIcon.png": "/portfolio/home/static/media/postgresIcon.cfd9dc3f35b0c23f69dc.png",
+    "index.html": "/portfolio/home/index.html",
+    "main.d77d6c1b.css.map": "/portfolio/home/static/css/main.d77d6c1b.css.map",
+    "main.fb4df4ad.js.map": "/portfolio/home/static/js/main.fb4df4ad.js.map"
   },
   "entrypoints": [
     "static/css/main.d77d6c1b.css",
-    "static/js/main.9cce27e5.js"
+    "static/js/main.fb4df4ad.js"
   ]
 }
