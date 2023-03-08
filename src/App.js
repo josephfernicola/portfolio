@@ -11,10 +11,10 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/portfolio" element={<Home />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/projects" element={<Projects />}></Route>
+          <Route path="/portfolio/home" element={<Home />}></Route>
+          <Route path="/portfolio/about" element={<About />}></Route>
+          <Route path="/portfolio/contact" element={<Contact />}></Route>
+          <Route path="/portfolio/projects" element={<Projects />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
