@@ -14,12 +14,27 @@ const Projects = () => {
       <ul className="allProjects">
         <li className="projectListItemContainer">
           <div className="titleAndImage">
-            <div className="projectTitle">Twitter Clone RESTful API</div>
-            <img
-              src={twitterCloneCodePreview}
+            <a
+              href="https://github.com/josephfernicola/twitter-clone-api"
+              className="projectTitle"
               alt="Twitter Clone Preview"
-              className="projectImage"
-            ></img>
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter Clone RESTful API
+            </a>
+            <a
+              href="https://github.com/josephfernicola/twitter-clone-api"
+              alt="Twitter Clone Preview"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={twitterCloneCodePreview}
+                alt="Twitter Clone Preview"
+                className="projectImage"
+              ></img>
+            </a>
           </div>
           <div className="projectDescription">
             <p>

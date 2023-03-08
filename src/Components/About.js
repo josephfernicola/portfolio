@@ -32,7 +32,10 @@ const About = () => {
         foundational knowledge.
       </p>
       <span className="aboutParagraph aboutSpan">
-        I am excited to continue growing as a developer and improving my skills!
+        Currently I am about to complete Cook Systems' FastTrack'd Program in
+        which I learned Java, Spring Boot, SQL, PostgreSQL, JavaScript, React,
+        Redux, and Node.js. I am excited to continue growing as a developer and
+        improving my skills!
       </span>
     </main>
   );
