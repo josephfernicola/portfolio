@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import fileDownload from "js-file-download";
 
 const Navbar = () => {
   return (

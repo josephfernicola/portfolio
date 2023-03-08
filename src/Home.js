@@ -79,8 +79,8 @@ const Home = () => {
           <span>{bio}</span>
         </div>
         <div className="aboutDescription">
-          <div>Hi, my name is</div>
-          <h2>Joseph Fernicola</h2>
+          <h3>Hi, my name is</h3>
+          <h1 className="nameOnHomepage">Joseph Fernicola</h1>
           <span>I build websites and web applications</span>
           <p>
             I am a software engineer passionate about full stack web development
