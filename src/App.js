@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Home";
 import Navbar from "./Components/Navbar";
 import Contact from "./Components/Contact";
@@ -11,6 +11,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
+          <Navigate from="/portfolio" to="/portfolio/home" />
           <Route path="/portfolio/home" element={<Home />}></Route>
           <Route path="/portfolio/about" element={<About />}></Route>
           <Route path="/portfolio/contact" element={<Contact />}></Route>
