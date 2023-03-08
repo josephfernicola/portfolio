@@ -1,0 +1,299 @@
+body {
+  background-color: #e9f1fa;
+  font-family: "Poppins", sans-serif;
+}
+.iconAttributes > * {
+  font-size: 10px;
+  bottom: 0;
+}
+
+.navbarContainer {
+  max-width: 1400px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.homeProfilePicture {
+  clip-path: circle();
+  height: 15rem;
+  width: 15rem;
+}
+
+.techIcon > svg,
+#nodeIcon {
+  width: 8rem;
+  height: 8rem;
+}
+
+#nodeIcon {
+  margin: 0 auto;
+  display: block;
+}
+
+.allIconsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: center;
+  row-gap: 5rem;
+  padding: 3rem;
+}
+
+.iconAndName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.iconAndName > img {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.aboutContainer {
+  padding: 1rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.resumeButton {
+  background-color: #00abe4;
+  color: #ffffff;
+  border: none;
+  padding: 1rem;
+  border-radius: 10rem;
+}
+
+.emailButton > svg {
+  height: 5rem;
+  width: 5rem;
+  color: #00abe4;
+}
+.linkedinButton > svg {
+  height: 3rem;
+  width: 3rem;
+  color: #0072b1;
+}
+.resumeButton:hover,
+.emailButton:hover,
+.linkedinButton > svg:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+.aboutDescription {
+  padding-left: 5rem;
+}
+
+.homeContainer > h3 {
+  text-align: center;
+  margin: 0;
+}
+
+#javascriptIcon {
+  color: #ffd600;
+  background-color: black;
+}
+#reactIcon {
+  color: #61dbfb;
+}
+
+#reduxIcon {
+  color: #7e57c2;
+}
+
+#springIcon {
+  color: #8bc34a;
+}
+
+#nodeIcon {
+  color: #388e3c;
+}
+
+#sqlIcon {
+  color: #3b4549;
+}
+#postgresIcon,
+#mysqlIcon,
+#javaIcon {
+  width: 10rem;
+  height: 10rem;
+}
+#mongoIcon {
+  color: #589636;
+}
+
+#htmlIcon {
+  color: #e65100;
+}
+
+#cssIcon {
+  color: #039be5;
+}
+
+#firebaseIcon {
+  color: #ff8f00;
+}
+
+.contactContainer {
+  padding: 3rem;
+  height: 70vh;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem;
+}
+.contactContainer > h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.linkedinButtonAndText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headshotAndBio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 20rem;
+}
+
+.projectsHeader {
+  text-align: center;
+}
+
+.allProjects {
+  margin-left: 10rem;
+}
+
+.projectImage {
+  height: 15rem;
+  width: 25rem;
+}
+
+.emrContainter,
+.waldoContainer,
+.shoppingCartContainer,
+.memoryCardContainer,
+.twitterCloneContainer {
+  display: flex;
+  align-items: center;
+}
+.titleAndImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.twitterTitle {
+  padding: 2rem;
+}
+.loadingScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.lds-spinner {
+  color: official;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-spinner div {
+  transform-origin: 40px 40px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 37px;
+  width: 6px;
+  height: 18px;
+  border-radius: 20%;
+  background: black;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
