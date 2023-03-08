@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import fileDownload from "js-file-download";
 
 const Navbar = () => {
   return (
@@ -8,8 +9,9 @@ const Navbar = () => {
       <Link to="/projects">Projects</Link>
       <Link to="/contact">Contact</Link>
       <a
-        href="files/resumeToDownload.docx"
+        href="JosephFernicolaResume.docx"
         target="_blank"
+        rel="noopener noreferrer"
         className="resumeButton"
         download
       >
