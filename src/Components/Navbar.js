@@ -7,14 +7,14 @@ const Navbar = () => {
       <Link to="/about">About</Link>
       <Link to="/projects">Projects</Link>
       <Link to="/contact">Contact</Link>
-      <Link
-        to="files/resumeToDownload.docx"
+      <a
+        href="files/resumeToDownload.docx"
         target="_blank"
         className="resumeButton"
         download
       >
         Download Resume
-      </Link>
+      </a>
     </nav>
   );
 };
