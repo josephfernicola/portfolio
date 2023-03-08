@@ -8,7 +8,9 @@ import resumeBuilderPreview from "../images/resumeBuilderPreview.png";
 const Projects = () => {
   return (
     <main className="projectsContainer">
-      <h1 className="projectsHeader">Take a look at my projects!</h1>
+      <h1 className="projectsHeader">
+        Click on my projects below to take a look!
+      </h1>
       <ul className="allProjects">
         <li className="projectListItemContainer">
           <div className="titleAndImage">
