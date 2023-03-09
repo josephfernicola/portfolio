@@ -17,7 +17,6 @@ const Projects = () => {
             <a
               href="https://github.com/josephfernicola/twitter-clone-api"
               className="projectTitle"
-              alt="Twitter Clone Preview"
               target="_blank"
               rel="noopener noreferrer"
             >

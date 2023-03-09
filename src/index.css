@@ -9,7 +9,6 @@ body {
 
 .navbarContainer {
   max-width: 1400px;
-  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -22,8 +21,8 @@ a {
 
 .homeProfilePicture {
   clip-path: circle();
-  height: 15rem;
-  width: 15rem;
+  height: 13rem;
+  width: 13rem;
 }
 
 .techIcon > svg,
@@ -41,8 +40,12 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-items: center;
-  row-gap: 5rem;
-  padding: 3rem;
+  row-gap: 2.5rem;
+  padding: 1rem;
+}
+
+.homeContainer h3 {
+  margin: 0;
 }
 
 .iconAndName {
@@ -57,7 +60,6 @@ a {
 }
 
 .aboutContainer {
-  padding: 1rem;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -175,7 +177,7 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 20rem;
+  height: 15rem;
 }
 
 .projectsHeader {
@@ -227,9 +229,55 @@ a {
   max-width: fit-content;
   padding: 0.8rem;
 }
-
 .nameOnHomepage {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.aboutParagraph,
+.projectsContainer *,
+.aboutSectionContainer h1,
+.allIconsContainer * {
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .projectImage:hover {
