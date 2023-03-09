@@ -30,23 +30,26 @@ const Home = () => {
       );
       const json = await response.json();
       if (response.ok) {
-        localStorage.setItem("profilePicture", JSON.stringify(json.avatar_url));
-        localStorage.setItem("bio", JSON.stringify(json.bio));
-        setBio(JSON.parse(localStorage.getItem("bio")));
-        setProfilePicture(JSON.parse(localStorage.getItem("profilePicture")));
+        sessionStorage.setItem(
+          "profilePicture",
+          JSON.stringify(json.avatar_url)
+        );
+        sessionStorage.setItem("bio", JSON.stringify(json.bio));
+        setBio(JSON.parse(sessionStorage.getItem("bio")));
+        setProfilePicture(JSON.parse(sessionStorage.getItem("profilePicture")));
       }
     };
     if (
-      JSON.parse(localStorage.getItem("bio")) == null ||
-      JSON.parse(localStorage.getItem("profilePicture")) == null
+      JSON.parse(sessionStorage.getItem("bio")) === null ||
+      JSON.parse(sessionStorage.getItem("profilePicture")) === null
     ) {
       fetchGithubInfo();
     } else {
-      setBio(JSON.parse(localStorage.getItem("bio")));
-      setProfilePicture(JSON.parse(localStorage.getItem("profilePicture")));
+      setBio(JSON.parse(sessionStorage.getItem("bio")));
+      setProfilePicture(JSON.parse(sessionStorage.getItem("profilePicture")));
     }
   }, []);
-  if (bio === null && profilePicture == null) {
+  if (bio === null && profilePicture === null) {
     return (
       <div className="loadingScreen">
         <div className="lds-spinner">
