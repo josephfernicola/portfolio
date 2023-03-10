@@ -17,6 +17,7 @@ import { useState } from "react";
 const Home = () => {
   const [profilePicture, setProfilePicture] = useState(null);
   const [bio, setBio] = useState(null);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchGithubInfo = async () => {
@@ -30,6 +31,7 @@ const Home = () => {
       );
       const json = await response.json();
       if (response.ok) {
+        setError(null);
         sessionStorage.setItem(
           "profilePicture",
           JSON.stringify(json.avatar_url)
@@ -37,6 +39,9 @@ const Home = () => {
         sessionStorage.setItem("bio", JSON.stringify(json.bio));
         setBio(JSON.parse(sessionStorage.getItem("bio")));
         setProfilePicture(JSON.parse(sessionStorage.getItem("profilePicture")));
+      }
+      if (!response.ok) {
+        setError("Unable to get profile information from GitHub.");
       }
     };
     if (
@@ -75,11 +80,12 @@ const Home = () => {
       <section className="aboutContainer">
         <div className="headshotAndBio">
           <img
-            alt="Headshot"
+            alt="Github Profile"
             className="homeProfilePicture"
             src={profilePicture}
           ></img>
           <span>{bio}</span>
+          <span className="error">{error}</span>
         </div>
         <div className="aboutDescription">
           <h3>Hi, my name is</h3>
