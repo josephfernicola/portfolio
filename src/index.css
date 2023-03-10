@@ -66,11 +66,13 @@ a {
 }
 
 .resumeButton {
-  background-color: #00abe4;
-  color: black;
   border: none;
   padding: 1rem;
-  border-radius: 10rem;
+  border-radius: 2rem;
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  color: black;
+  font-family: cursive;
+  box-sizing: border-box;
 }
 
 .emailButton > svg {
@@ -251,6 +253,17 @@ a {
   -webkit-animation: fadein 2s; /* Safari and Chrome */
   -o-animation: fadein 2s; /* Opera */
 }
+
+.readMoreButton {
+  cursor: pointer;
+  border: none;
+  padding: 8px;
+  font-size: 20px;
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  color: black;
+  font-family: cursive;
+  box-sizing: border-box;
+}
 @keyframes fadein {
   from {
     opacity: 0;
@@ -391,10 +404,14 @@ a {
   .projectListItemContainer {
     flex-direction: column;
     align-items: center;
+    margin-top: 1.5rem;
   }
   .projectDescription {
-    width: 25rem;
+    width: 26.5rem;
     margin-top: 0;
+  }
+  .readMoreButtonContainer {
+    text-align: center;
   }
 
   .allProjects {
@@ -409,14 +426,6 @@ a {
 
   .navbarContainer {
     padding: 0;
-  }
-  .resumeButton {
-    height: 1.5rem;
-    width: 2.5rem;
-    border-radius: 10rem;
-    font-size: 0.5rem;
-    padding: 0.7rem;
-    text-align: center;
   }
 }
 
@@ -454,5 +463,13 @@ a {
 
   .contactContainer > h1 {
     margin-bottom: 2rem;
+  }
+
+  .resumeButton {
+    height: 2.5rem;
+    width: 4.5rem;
+    font-size: 0.5rem;
+    padding: 0.7rem;
+    text-align: center;
   }
 }

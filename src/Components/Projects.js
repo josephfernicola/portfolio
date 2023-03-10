@@ -4,8 +4,70 @@ import shoppingCartPreview from "../images/shoppingCartPreview.png";
 import memoryCardPreview from "../images/memoryCardPreview.png";
 import twitterCloneCodePreview from "../images/twitterCloneCodePreview.png";
 import resumeBuilderPreview from "../images/resumeBuilderPreview.png";
+import { useState } from "react";
 
 const Projects = () => {
+  const [readMoreTwitter, setReadMoreTwitter] = useState(false);
+  const [readMoreEmr, setReadMoreEmr] = useState(false);
+  const [readMoreWaldo, setReadMoreWaldo] = useState(false);
+  const [readMoreShoppingCart, setReadMoreShoppingCart] = useState(false);
+  const twitterText = (
+    <div>
+      <p>
+        ▪ Created a database schema using PostgreSQL in pgAdmin in collaboration
+        with other developers
+      </p>
+      <p>
+        ▪ Utilized Spring Boot and JPA to build controllers and service
+        implementations that handle HTTP requests, backend validation and logic,
+        and converts data between the API and its database models
+      </p>
+      <p>
+        ▪ Fulfilled project requirements by using Postman to test, troubleshoot,
+        and debug API functionality
+      </p>
+    </div>
+  );
+  const emrText = (
+    <div>
+      <p>▪ Built backend server and REST API using Node.js and Express.js</p>
+      <p>
+        ▪ Stored user information, patient information, and notes in MongoDB
+      </p>
+      <p>
+        ▪ Implemented authentication and API endpoint protection using JSON web
+        tokens
+      </p>
+      <p>
+        ▪ Utilized Mongoose for structuring and accessing user and patient
+        information
+      </p>
+    </div>
+  );
+  const waldoText = (
+    <div>
+      <p>
+        ▪ Users can click anywhere on the map to make their guess for a specific
+        character which is validated with X and Y coordinates on the page
+      </p>
+      <p>
+        ▪ Utilized Firebase for the backend to store and display the user scores
+        and names for each map
+      </p>
+    </div>
+  );
+  const shoppingCartText = (
+    <div>
+      <p>
+        ▪ Utilized React Router to navigate to different pages of the
+        application
+      </p>
+      <p>
+        ▪ Calculated the total price at the bottom of the cart page when any
+        item is added or removed
+      </p>
+    </div>
+  );
   return (
     <main className="projectsContainer">
       <h1 className="projectsHeader">
@@ -34,6 +96,9 @@ const Projects = () => {
                 className="projectImage"
               ></img>
             </a>
+            <div>
+              <em>Java, Spring Boot, JPA, PostgreSQL</em>
+            </div>
           </div>
           <div className="projectDescription">
             <p>
@@ -41,19 +106,15 @@ const Projects = () => {
               various endpoints for performing CRUD operations and other HTTP
               requests for users, tweets, and hashtags
             </p>
-            <p>
-              ▪ Created a database schema using PostgreSQL in pgAdmin in
-              collaboration with other developers
-            </p>
-            <p>
-              ▪ Utilized Spring Boot and JPA to build controllers and service
-              implementations that handle HTTP requests, backend validation and
-              logic, and converts data between the API and its database models
-            </p>
-            <p>
-              ▪ Fulfilled project requirements by using Postman to test,
-              troubleshoot, and debug API functionality
-            </p>
+            {twitterText && readMoreTwitter ? twitterText : null}
+            <div className="readMoreButtonContainer">
+              <button
+                className="readMoreButton"
+                onClick={() => setReadMoreTwitter(!readMoreTwitter)}
+              >
+                {readMoreTwitter ? "Read less" : "Read more"}
+              </button>
+            </div>
           </div>
         </li>
         <li className="projectListItemContainer">
@@ -77,28 +138,25 @@ const Projects = () => {
                 className="projectImage"
               ></img>
             </a>
+            <div>
+              <em>React, Node.js, Express, MongoDB</em>
+            </div>
           </div>
           <div className="projectDescription">
             <p>
               ▪ A full-stack electronic medical record accplication in which
               users can write patient notes, edit their own notes, view all
-              patient notes from other providers, and delete their own notes.
+              patient notes from other providers, and delete their own notes
             </p>
-            <p>
-              ▪ Built backend server and REST API using Node.js and Express.js
-            </p>
-            <p>
-              ▪ Stored user information, patient information, and notes in
-              MongoDB
-            </p>
-            <p>
-              ▪ Implemented authentication and API endpoint protection using
-              JSON web tokens
-            </p>
-            <p>
-              ▪ Utilized Mongoose for structuring and accessing user and patient
-              information
-            </p>
+            {emrText && readMoreEmr ? emrText : null}
+            <div className="readMoreButtonContainer">
+              <button
+                className="readMoreButton"
+                onClick={() => setReadMoreEmr(!readMoreEmr)}
+              >
+                {readMoreEmr ? "Read less" : "Read more"}
+              </button>
+            </div>
           </div>
         </li>
         <li className="projectListItemContainer">
@@ -122,6 +180,9 @@ const Projects = () => {
                 className="projectImage"
               ></img>
             </a>
+            <div>
+              <em>React</em>
+            </div>
           </div>
           <div className="projectDescription">
             <p>
@@ -129,15 +190,15 @@ const Projects = () => {
               different maps to play, to find all three characters while being
               timed
             </p>
-            <p>
-              ▪ Users can click anywhere on the map to make their guess for a
-              specific character which is validated with X and Y coordinates on
-              the page
-            </p>
-            <p>
-              ▪ Utilized Firebase for the backend to store and display the user
-              scores and names for each map
-            </p>
+            {waldoText && readMoreWaldo ? waldoText : null}
+            <div className="readMoreButtonContainer">
+              <button
+                className="readMoreButton"
+                onClick={() => setReadMoreWaldo(!readMoreWaldo)}
+              >
+                {readMoreWaldo ? "Read less" : "Read more"}
+              </button>
+            </div>
           </div>
         </li>
         <li className="projectListItemContainer">
@@ -161,20 +222,24 @@ const Projects = () => {
                 className="projectImage"
               ></img>
             </a>
+            <div>
+              <em>React</em>
+            </div>
           </div>
           <div className="projectDescription">
             <p>
               ▪ A clothing store website which allows users to browse and add
               items to their cart
             </p>
-            <p>
-              ▪ Utilized React Router to navigate to different pages of the
-              application
-            </p>
-            <p>
-              ▪ Calculated the total price at the bottom of the cart page when
-              any item is added or removed
-            </p>
+            {shoppingCartText && readMoreShoppingCart ? shoppingCartText : null}
+            <div className="readMoreButtonContainer">
+              <button
+                className="readMoreButton"
+                onClick={() => setReadMoreShoppingCart(!readMoreShoppingCart)}
+              >
+                {readMoreShoppingCart ? "Read less" : "Read more"}
+              </button>
+            </div>
           </div>
         </li>
         <li className="projectListItemContainer">
@@ -198,6 +263,9 @@ const Projects = () => {
                 className="projectImage"
               ></img>
             </a>
+            <div>
+              <em>React</em>
+            </div>
           </div>
           <div className="projectDescription">
             <p>
@@ -228,11 +296,15 @@ const Projects = () => {
                 className="projectImage"
               ></img>
             </a>
+            <div>
+              <em>React</em>
+            </div>
           </div>
           <div className="projectDescription">
             <p>
-              ▪ A resume builder application which allows users to generate a CV
-              application by clicking on each item to fill out their information
+              ▪ A resume builder application which allows users to generate
+              their resume by clicking on each item to fill out their
+              information
             </p>
           </div>
         </li>
