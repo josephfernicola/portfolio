@@ -10,9 +10,9 @@ const Projects = () => {
   const [readMoreTwitter, setReadMoreTwitter] = useState(false);
   const [readMoreEmr, setReadMoreEmr] = useState(false);
   const [readMoreWaldo, setReadMoreWaldo] = useState(false);
-  const [readMoreShoppingCart, setReadMoreShoppingCart] = useState(false);
+
   const twitterText = (
-    <div>
+    <div className="twitterText">
       <p>
         ▪ Created a database schema using PostgreSQL in pgAdmin in collaboration
         with other developers
@@ -29,7 +29,7 @@ const Projects = () => {
     </div>
   );
   const emrText = (
-    <div>
+    <div className="emrText">
       <p>▪ Built backend server and REST API using Node.js and Express.js</p>
       <p>
         ▪ Stored user information, patient information, and notes in MongoDB
@@ -45,7 +45,7 @@ const Projects = () => {
     </div>
   );
   const waldoText = (
-    <div>
+    <div className="waldoText">
       <p>
         ▪ Users can click anywhere on the map to make their guess for a specific
         character which is validated with X and Y coordinates on the page
@@ -56,18 +56,7 @@ const Projects = () => {
       </p>
     </div>
   );
-  const shoppingCartText = (
-    <div>
-      <p>
-        ▪ Utilized React Router to navigate to different pages of the
-        application
-      </p>
-      <p>
-        ▪ Calculated the total price at the bottom of the cart page when any
-        item is added or removed
-      </p>
-    </div>
-  );
+
   return (
     <main className="projectsContainer">
       <h1 className="projectsHeader">
@@ -229,17 +218,13 @@ const Projects = () => {
           <div className="projectDescription">
             <p>
               ▪ A clothing store website which allows users to browse and add
-              items to their cart
+              items to their cart, with their total price being calculated at
+              the checkout page
             </p>
-            {shoppingCartText && readMoreShoppingCart ? shoppingCartText : null}
-            <div className="readMoreButtonContainer">
-              <button
-                className="readMoreButton"
-                onClick={() => setReadMoreShoppingCart(!readMoreShoppingCart)}
-              >
-                {readMoreShoppingCart ? "Read less" : "Read more"}
-              </button>
-            </div>
+            <p>
+              ▪ Utilized React Router to navigate to different pages of the
+              application
+            </p>
           </div>
         </li>
         <li className="projectListItemContainer">
