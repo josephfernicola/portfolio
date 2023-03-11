@@ -433,8 +433,13 @@ a {
     flex-direction: column;
     text-align: center;
   }
+  .homeContainer {
+    margin-top: 1rem;
+  }
+  
   .aboutDescription {
     padding-left: 0;
+    margin-top: 2rem;
   }
 
   .titleAndImage {
