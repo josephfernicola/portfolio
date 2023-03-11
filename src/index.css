@@ -71,7 +71,6 @@ a {
   border-radius: 2rem;
   background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
   color: black;
-  font-family: cursive;
   box-sizing: border-box;
 }
 
@@ -469,7 +468,8 @@ a {
     height: 2.5rem;
     width: 4.5rem;
     font-size: 0.5rem;
-    padding: 0.7rem;
+    padding: 0.6rem;
     text-align: center;
+    font-weight: bold;
   }
 }
