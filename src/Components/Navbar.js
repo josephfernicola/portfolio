@@ -3,15 +3,23 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="navbarContainer">
-      <Link to="/portfolio/home">Home</Link>
-      <Link to="/portfolio/about">About</Link>
-      <Link to="/portfolio/projects">Projects</Link>
-      <Link to="/portfolio/contact">Contact</Link>
+      <Link to="/portfolio/home" className="navbarLink">
+        Home
+      </Link>
+      <Link to="/portfolio/about" className="navbarLink">
+        About
+      </Link>
+      <Link to="/portfolio/projects" className="navbarLink">
+        Projects
+      </Link>
+      <Link to="/portfolio/contact" className="navbarLink">
+        Contact
+      </Link>
       <a
         href="JosephFernicolaResume.docx"
         target="_blank"
         rel="noopener noreferrer"
-        className="resumeButton"
+        className="navbarLink"
         download
       >
         Download Resume

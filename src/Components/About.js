@@ -32,9 +32,9 @@ const About = () => {
         foundational knowledge.
       </p>
       <span className="aboutParagraph aboutSpan">
-        Currently I am about to complete Cook Systems' FastTrack'd Program in
-        which I learned Java, Spring Boot, SQL, PostgreSQL, JavaScript, React,
-        Redux, and Node.js. I am excited to continue growing as a developer and
+        I am currently completing Cook Systems' FastTrack'd Program in which I
+        learned Java, Spring Boot, SQL, PostgreSQL, JavaScript, React, Redux,
+        and Node.js. I am excited to continue growing as a developer and
         improving my skills!
       </span>
     </main>

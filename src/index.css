@@ -2,6 +2,7 @@ body {
   background-color: #e9f1fa;
   font-family: "Poppins", sans-serif;
 }
+
 .iconAttributes > * {
   font-size: 10px;
   bottom: 0;
@@ -12,6 +13,30 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 1rem;
+}
+
+.navbarLink {
+  display: inline-block;
+  position: relative;
+}
+
+.navbarLink::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbarLink:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 a {
@@ -47,6 +72,9 @@ a {
 .homeContainer h3 {
   margin: 0;
 }
+.homeContainer {
+  margin-top: 1rem;
+}
 
 .iconAndName {
   display: flex;
@@ -65,15 +93,6 @@ a {
   justify-content: center;
 }
 
-.resumeButton {
-  border: none;
-  padding: 1rem;
-  border-radius: 2rem;
-  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-  color: black;
-  box-sizing: border-box;
-}
-
 .emailButton > svg {
   height: 3rem;
   width: 3rem;
@@ -84,8 +103,8 @@ a {
   width: 3rem;
   color: #0072b1;
 }
-.resumeButton:hover,
-.emailButton:hover,
+
+.emailButton > svg:hover,
 .linkedinButton > svg:hover {
   cursor: pointer;
   opacity: 80%;
@@ -147,7 +166,76 @@ a {
 
 .contactContainer {
   padding: 3rem;
-  height: 70vh;
+  height: 73vh;
+}
+.contactIconParent div:hover {
+  cursor: pointer;
+}
+.contactIconParent li a,
+.contactIconParent li div {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 2rem;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+.contactIconParent li a .icon,
+.contactIconParent li div .icon {
+  position: relative;
+  color: #3c4043;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.contactIconParent li a:hover .icon,
+.contactIconParent li div:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+.contactIcon::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.contactIcon:hover::before {
+  top: 0;
+}
+
+.contactIcon::before {
+  background: #0077b5;
+}
+
+.contactIconParent {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+}
+
+.contactIconParent li:nth-child(2) a:before {
+  background: black;
+}
+
+.contactIconParent li:nth-child(3) div:before {
+  background: #dd4b39;
 }
 .buttonContainer {
   display: flex;
@@ -157,20 +245,6 @@ a {
 .contactContainer > h1 {
   text-align: center;
   margin-bottom: 3rem;
-}
-.linkedinButtonAndText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  flex: 1;
-}
-
-.emailButton {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
 }
 
 .headshotAndBio {
@@ -189,6 +263,8 @@ a {
   height: auto;
   width: 100%;
   max-width: 25rem;
+
+  cursor: pointer;
 }
 
 .projectTitle {
@@ -260,16 +336,40 @@ a {
   display: flex;
 }
 .readMoreButton {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
   cursor: pointer;
-  border: none;
-  padding: 1rem;
-  font-size: 20px;
-  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-  color: black;
-  border-radius: 5rem;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: 0.25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0.5rem;
+}
+
+.readMoreButton:hover {
+  background: #f6f9fe;
+}
+
+.readMoreButton:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
+    0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
 }
 
 .twitterText > p,
@@ -315,7 +415,7 @@ a {
 }
 
 .projectImage:hover {
-  opacity: 70%;
+  opacity: 0.7;
 }
 
 .loadingScreen {
@@ -416,7 +516,7 @@ a {
 
 @media (max-width: 1250px) {
   .projectListItemContainer {
-    /* flex-direction: column; */
+    flex-direction: column;
     align-items: center;
     margin-top: 1.5rem;
   }
@@ -447,6 +547,16 @@ a {
   .aboutContainer {
     flex-direction: column;
     text-align: center;
+  }
+  .contactIconParent {
+    flex-direction: column;
+  }
+  .contactIconParent li a,
+  .contactIconParent li div {
+    margin: 2rem 0;
+  }
+  .contactContainer {
+    height: 80vh;
   }
   .homeContainer {
     margin-top: 1rem;
@@ -482,13 +592,5 @@ a {
 
   .contactContainer > h1 {
     margin-bottom: 2rem;
-  }
-
-  .resumeButton {
-    height: 2.5rem;
-    width: 4.5rem;
-    font-size: 0.5rem;
-    padding: 0.6rem;
-    text-align: center;
   }
 }

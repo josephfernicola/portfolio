@@ -1,6 +1,3 @@
-import { BsLinkedin } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
-
 const Contact = () => {
   const openEmail = () => {
     window.open("mailto:josephrfernicola@gmail.com");
@@ -8,24 +5,33 @@ const Contact = () => {
   return (
     <main className="contactContainer">
       <h1 className="contactHeader">Get In Touch</h1>
-      <div className="buttonContainer">
-        <div className="emailButton" onClick={openEmail}>
-          {<MdEmail />}
-          <div>Email Me</div>
-        </div>
-
-        <div className="linkedinButtonAndText">
+      <ul className="contactIconParent">
+        <li>
           <a
             href="https://www.linkedin.com/in/joseph-fernicola-248780205/"
+            className="contactIcon"
             target="_blank"
             rel="noopener noreferrer"
-            className="linkedinButton"
           >
-            {<BsLinkedin />}
+            <i className="fab fa-linkedin-in icon"></i>
           </a>
-          <div>Connect on LinkedIn</div>
-        </div>
-      </div>
+        </li>
+        <li>
+          <a
+            href="https://github.com/josephfernicola"
+            className="contactIcon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-github icon"></i>
+          </a>
+        </li>
+        <li>
+          <div className="contactIcon" onClick={openEmail}>
+            <i className="fas fa-envelope icon"></i>
+          </div>
+        </li>
+      </ul>
     </main>
   );
 };
