@@ -4,12 +4,15 @@ import shoppingCartPreview from "../images/shoppingCartPreview.png";
 import memoryCardPreview from "../images/memoryCardPreview.png";
 import twitterCloneCodePreview from "../images/twitterCloneCodePreview.png";
 import resumeBuilderPreview from "../images/resumeBuilderPreview.png";
+import battleshipPreview from "../images/battleshipPreview.png";
+import devDuelPreview from "../images/devDuelPreview.png";
 import { useState } from "react";
 
 const Projects = () => {
   const [readMoreTwitter, setReadMoreTwitter] = useState(false);
   const [readMoreEmr, setReadMoreEmr] = useState(false);
   const [readMoreWaldo, setReadMoreWaldo] = useState(false);
+  const [readMoreDevDuel, setReadMoreDevDuel] = useState(false);
 
   const twitterText = (
     <div className="twitterText">
@@ -57,12 +60,63 @@ const Projects = () => {
     </div>
   );
 
+  const devDuelText = (
+    <div className="devDuelText">
+      <p>
+        ▪ Duel route implements a scoring function which takes the users GitHub
+        data and displays the winner based on the repository data
+      </p>
+      {/* <p>▪ Utilized styled components </p> */}
+    </div>
+  );
+
   return (
     <main className="projectsContainer">
       <h1 className="projectsHeader">
         Click on my projects below to take a look!
       </h1>
       <ul className="allProjects">
+        <li className="projectListItemContainer">
+          <div className="titleAndImage">
+            <a
+              href="https://github.com/josephfernicola/developer-duel"
+              className="projectTitle"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Developer Duel
+            </a>
+            <a
+              href="https://github.com/josephfernicola/developer-duel"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={devDuelPreview}
+                alt="Twitter Clone Preview"
+                className="projectImage"
+              ></img>
+            </a>
+            <div>
+              <em>React, Node.js, Express</em>
+            </div>
+          </div>
+          <div className="projectDescription">
+            <p>
+              ▪ A full stack application using GitHub's API to read and display
+              information about a user's GitHub profile and repository data
+            </p>
+            {devDuelText && readMoreDevDuel ? devDuelText : null}
+            <div className="readMoreButtonContainer">
+              <button
+                className="readMoreButton"
+                onClick={() => setReadMoreDevDuel(!readMoreDevDuel)}
+              >
+                {readMoreDevDuel ? "Read less" : "Read more"}
+              </button>
+            </div>
+          </div>
+        </li>
         <li className="projectListItemContainer">
           <div className="titleAndImage">
             <a
@@ -75,7 +129,6 @@ const Projects = () => {
             </a>
             <a
               href="https://github.com/josephfernicola/twitter-clone-api"
-              alt="Twitter Clone Preview"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -254,7 +307,7 @@ const Projects = () => {
           </div>
           <div className="projectDescription">
             <p>
-              ▪ A React application in which users click on an album to get
+              ▪ A memory card game in which users click on an album to get
               points but cannot click on the same album more than once
             </p>
             <p>▪ Randomly shuffled the list of albums after each click</p>
@@ -290,6 +343,43 @@ const Projects = () => {
               ▪ A resume builder application which allows users to generate
               their resume by clicking on each item to fill out their
               information
+            </p>
+          </div>
+        </li>
+        <li className="projectListItemContainer">
+          <div className="titleAndImage">
+            <a
+              href="https://josephfernicola.github.io/battleship/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="projectTitle"
+            >
+              Battleship
+            </a>
+            <a
+              href="https://josephfernicola.github.io/battleship/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={battleshipPreview}
+                alt="Battleship Preview"
+                className="projectImage"
+              ></img>
+            </a>
+            <div>
+              <em>JavaScript, CSS, HTML</em>
+            </div>
+          </div>
+          <div className="projectDescription">
+            <p>
+              ▪ A battleship game in which users click on the computer's board
+              to place an attack, followed by a random attack on the user's
+              board by the computer
+            </p>
+            <p>
+              ▪ The winner or a tie is announced at the end once all ships have
+              been sunk
             </p>
           </div>
         </li>
