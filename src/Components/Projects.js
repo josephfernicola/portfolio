@@ -5,7 +5,6 @@ import memoryCardPreview from "../images/memoryCardPreview.png";
 import twitterCloneCodePreview from "../images/twitterCloneCodePreview.png";
 import resumeBuilderPreview from "../images/resumeBuilderPreview.png";
 import battleshipPreview from "../images/battleshipPreview.png";
-import devDuelPreview from "../images/devDuelPreview.png";
 import { useState } from "react";
 
 const Projects = () => {
@@ -14,7 +13,7 @@ const Projects = () => {
   const [readMoreWaldo, setReadMoreWaldo] = useState(false);
 
   const twitterText = (
-    <div className="twitterText">
+    <div className="readMoreText">
       <p>
         ▪ Created a database schema using PostgreSQL in pgAdmin in collaboration
         with other developers
@@ -31,7 +30,7 @@ const Projects = () => {
     </div>
   );
   const emrText = (
-    <div className="emrText">
+    <div className="readMoreText">
       <p>▪ Built backend server and REST API using Node.js and Express.js</p>
       <p>
         ▪ Stored user information, patient information, and notes in MongoDB
@@ -47,7 +46,7 @@ const Projects = () => {
     </div>
   );
   const waldoText = (
-    <div className="waldoText">
+    <div className="readMoreText">
       <p>
         ▪ Users can click anywhere on the map to make their guess for a specific
         character which is validated with X and Y coordinates on the page
@@ -58,7 +57,6 @@ const Projects = () => {
       </p>
     </div>
   );
-
   return (
     <main className="projectsContainer">
       <h1 className="projectsHeader">
@@ -135,8 +133,8 @@ const Projects = () => {
           <div className="projectDescription">
             <p>
               ▪ A full-stack electronic medical record accplication in which
-              users can write patient notes, edit their own notes, view all
-              patient notes from other providers, and delete their own notes
+              users can write patient notes, edit their own notes, view
+              documentation from other providers, and delete their own notes
             </p>
             {emrText && readMoreEmr ? emrText : null}
             <div className="readMoreButtonContainer">
@@ -176,9 +174,8 @@ const Projects = () => {
           </div>
           <div className="projectDescription">
             <p>
-              ▪ A photo tagging Where’s Waldo application that includes four
-              different maps to play, to find all three characters while being
-              timed
+              ▪ A photo tagging application that includes four different Where's
+              Waldo maps to play while being timed
             </p>
             {waldoText && readMoreWaldo ? waldoText : null}
             <div className="readMoreButtonContainer">
@@ -219,8 +216,8 @@ const Projects = () => {
           <div className="projectDescription">
             <p>
               ▪ A clothing store website which allows users to browse and add
-              items to their cart, with their total price being calculated at
-              the checkout page
+              items to their cart, while totaling the price with each addition
+              and deletion of products
             </p>
             <p>
               ▪ Utilized React Router to navigate to different pages of the
