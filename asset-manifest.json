@@ -1,24 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b5efb35a.css",
-    "main.js": "/portfolio/static/js/main.bad2f972.js",
+    "main.css": "/portfolio/static/css/main.5d3f4b54.css",
+    "main.js": "/portfolio/static/js/main.3cfe7412.js",
     "static/media/waldoPreview.png": "/portfolio/static/media/waldoPreview.6028a46e56a3f15a148b.png",
     "static/media/memoryCardPreview.png": "/portfolio/static/media/memoryCardPreview.54d7d7474311b2e762c1.png",
     "static/media/shoppingCartPreview.png": "/portfolio/static/media/shoppingCartPreview.ba56a490058f295577d7.png",
-    "static/media/emrPreview.png": "/portfolio/static/media/emrPreview.6c0269a45daa168c6877.png",
+    "static/media/emrPreview.png": "/portfolio/static/media/emrPreview.8beecb13fa65591119a7.png",
     "static/media/twitterCloneCodePreview.png": "/portfolio/static/media/twitterCloneCodePreview.59f9eb6498ee0dc99ec7.png",
     "static/media/resumeBuilderPreview.png": "/portfolio/static/media/resumeBuilderPreview.e8faf8956ef45021d0f6.png",
-    "static/media/devDuelPreview.png": "/portfolio/static/media/devDuelPreview.15bf53a61b9dc355658d.png",
     "static/media/battleshipPreview.png": "/portfolio/static/media/battleshipPreview.a2e17efd6e3400b8be3f.png",
     "static/media/nodeIcon.png": "/portfolio/static/media/nodeIcon.749b8af67e60d6b0dcab.png",
     "static/media/javaIcon.png": "/portfolio/static/media/javaIcon.e238a2c40e6eaec570bc.png",
     "static/media/postgresIcon.png": "/portfolio/static/media/postgresIcon.cfd9dc3f35b0c23f69dc.png",
     "index.html": "/portfolio/index.html",
-    "main.b5efb35a.css.map": "/portfolio/static/css/main.b5efb35a.css.map",
-    "main.bad2f972.js.map": "/portfolio/static/js/main.bad2f972.js.map"
+    "main.5d3f4b54.css.map": "/portfolio/static/css/main.5d3f4b54.css.map",
+    "main.3cfe7412.js.map": "/portfolio/static/js/main.3cfe7412.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5efb35a.css",
-    "static/js/main.bad2f972.js"
+    "static/css/main.5d3f4b54.css",
+    "static/js/main.3cfe7412.js"
   ]
 }
