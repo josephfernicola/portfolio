@@ -15,13 +15,13 @@ const Projects = () => {
   const twitterText = (
     <div className="readMoreText">
       <p>
-        ▪ Created a database schema using PostgreSQL in pgAdmin in collaboration
+        ▪ Created database schema using PostgreSQL in pgAdmin in collaboration
         with other developers
       </p>
       <p>
         ▪ Utilized Spring Boot and JPA to build controllers and service
-        implementations that handle HTTP requests, backend validation and logic,
-        and converts data between the API and its database models
+        implementations that handle HTTP requests and responses, and converts
+        data between the API and its database models
       </p>
       <p>
         ▪ Fulfilled project requirements by using Postman to test, troubleshoot,
