@@ -12,7 +12,6 @@ const Projects = () => {
   const [readMoreTwitter, setReadMoreTwitter] = useState(false);
   const [readMoreEmr, setReadMoreEmr] = useState(false);
   const [readMoreWaldo, setReadMoreWaldo] = useState(false);
-  const [readMoreDevDuel, setReadMoreDevDuel] = useState(false);
 
   const twitterText = (
     <div className="twitterText">
@@ -60,63 +59,12 @@ const Projects = () => {
     </div>
   );
 
-  const devDuelText = (
-    <div className="devDuelText">
-      <p>
-        ▪ Duel route implements a scoring function which takes the users GitHub
-        data and displays the winner based on the repository data
-      </p>
-      {/* <p>▪ Utilized styled components </p> */}
-    </div>
-  );
-
   return (
     <main className="projectsContainer">
       <h1 className="projectsHeader">
         Click on my projects below to take a look!
       </h1>
       <ul className="allProjects">
-        <li className="projectListItemContainer">
-          <div className="titleAndImage">
-            <a
-              href="https://github.com/josephfernicola/developer-duel"
-              className="projectTitle"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Developer Duel
-            </a>
-            <a
-              href="https://github.com/josephfernicola/developer-duel"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={devDuelPreview}
-                alt="Twitter Clone Preview"
-                className="projectImage"
-              ></img>
-            </a>
-            <div>
-              <em>React, Node.js, Express</em>
-            </div>
-          </div>
-          <div className="projectDescription">
-            <p>
-              ▪ A full stack application using GitHub's API to read and display
-              information about a user's GitHub profile and repository data
-            </p>
-            {devDuelText && readMoreDevDuel ? devDuelText : null}
-            <div className="readMoreButtonContainer">
-              <button
-                className="readMoreButton"
-                onClick={() => setReadMoreDevDuel(!readMoreDevDuel)}
-              >
-                {readMoreDevDuel ? "Read less" : "Read more"}
-              </button>
-            </div>
-          </div>
-        </li>
         <li className="projectListItemContainer">
           <div className="titleAndImage">
             <a
