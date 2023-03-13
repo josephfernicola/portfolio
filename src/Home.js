@@ -11,6 +11,7 @@ import postgresIcon from "./images/postgresIcon.png";
 import mysqlIcon from "./images/mysqlIcon.png";
 import javaIcon from "./images/javaIcon.png";
 import nodeIcon from "./images/nodeIcon.png";
+import expressIcon from "./images/expressIcon.png";
 import { useEffect } from "react";
 import { useState } from "react";
 
@@ -141,7 +142,16 @@ const Home = () => {
             src={nodeIcon}
             alt="Node.js"
           ></img>
-          <span>Node.js & Express.js</span>
+          <span>Node.js</span>
+        </div>
+        <div className="iconAndName">
+          <img
+            className="techIcon"
+            id="expressIcon"
+            src={expressIcon}
+            alt="Express"
+          ></img>
+          <span>Express</span>
         </div>
         <div className="iconAndName">
           <div className="techIcon" id="sqlIcon">

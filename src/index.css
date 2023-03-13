@@ -56,6 +56,12 @@ a {
   height: 8rem;
 }
 
+#expressIcon {
+  width: 7rem;
+  height: 7rem;
+  margin-bottom: 0.5rem;
+}
+
 #nodeIcon {
   margin: 0 auto;
   display: block;
